@@ -209,6 +209,7 @@ CSV columns → `image_id, predicted_label, confidence`
 * Two-class dataset: **cats** & **dogs**
 * Split controlled by `--train_ratio`
 * Place data under `backend/data/` or pass absolute paths
+* Download dataset here: [Google Drive Link](https://drive.google.com/drive/folders/1gbmuYFNZkEszR5VvtgMp3hSL1cxM8QwP?usp=sharing)
 
 ---
 
