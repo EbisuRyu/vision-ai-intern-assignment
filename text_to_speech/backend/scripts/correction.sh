@@ -1,0 +1,1 @@
+python correction.py -i input.txt -o corrected.txt

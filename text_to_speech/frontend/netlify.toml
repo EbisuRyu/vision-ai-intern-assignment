@@ -1,0 +1,13 @@
+[build]
+  command = "npm install && npm run build"
+  publish = "out"
+
+[[redirects]]
+  from = "/api/*"
+  to = ":env(BACKEND_URL)/:splat"
+  status = 200
+  force = true
+
+[build.environment]
+  NEXT_PUBLIC_API_URL = "https://b1babc707eff.ngrok-free.app"
+  BACKEND_URL = "https://b1babc707eff.ngrok-free.app"

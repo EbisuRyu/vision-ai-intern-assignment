@@ -1,0 +1,14 @@
+# Ignore data folder
+data/
+
+# Ignore venv
+venv/
+__pycache__/
+*.pyc
+
+# Ignore git
+.git
+.gitignore
+
+# Ignore OS junk
+.DS_Store

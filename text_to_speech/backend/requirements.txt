@@ -1,0 +1,13 @@
+git+https://github.com/NTT123/vietTTS.git@demo 
+matplotlib
+jax==0.5.3 
+jaxlib==0.5.3  
+
+huggingface_hub[hf_xet]
+transformers>=4.35.0
+torch>=2.1.0
+sentencepiece>=0.1.99
+
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+python-multipart

@@ -1,0 +1,1 @@
+python tts.py -i "Xin chào, tôi là demo TTS" -o demo.wav
