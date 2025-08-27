@@ -9,5 +9,5 @@
   force = true
 
 [build.environment]
-  NEXT_PUBLIC_API_URL = "https://vision-ai-intern-assignment.onrender.com"
-  BACKEND_URL = "https://vision-ai-intern-assignment.onrender.com"
+  NEXT_PUBLIC_API_URL = "https://b1babc707eff.ngrok-free.app"
+  BACKEND_URL = "https://b1babc707eff.ngrok-free.app"
