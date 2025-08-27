@@ -2,7 +2,12 @@
 
 An end-to-end **image classification system** for distinguishing cats and dogs, built with a **Vision Transformer (ViT)** backbone from Hugging Face.
 
+This project includes:
 
+* ⚡ **Backend API (FastAPI)** – Single & multi-image prediction
+* 🎨 **Frontend (Next.js)** – Upload and visualize classification results
+* 🧑‍💻 **Training & Evaluation scripts/notebooks** – Reproducible experiments
+* 📦 **Docker/Docker Compose** – Easy local deployment
 
 <div align="center">
   <a href="https://www.youtube.com/watch?v=-549M3T56dA" target="_blank">
@@ -14,12 +19,6 @@ An end-to-end **image classification system** for distinguishing cats and dogs, 
   <p><b>Click to watch the full demo on YouTube</b></p>
 </div>
 
-This project includes:
-
-* ⚡ **Backend API (FastAPI)** – Single & multi-image prediction
-* 🎨 **Frontend (Next.js)** – Upload and visualize classification results
-* 🧑‍💻 **Training & Evaluation scripts/notebooks** – Reproducible experiments
-* 📦 **Docker/Docker Compose** – Easy local deployment
 ---
 
 ### 📂 Project Structure

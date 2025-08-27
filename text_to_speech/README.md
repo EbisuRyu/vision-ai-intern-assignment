@@ -2,6 +2,12 @@
 
 An end-to-end **Vietnamese Text-to-Speech system** with integrated **text correction** capabilities. 
 
+This project provides:
+
+* ⚡ **Backend API (FastAPI)** – Text correction & TTS endpoints
+* 🎨 **Frontend (Next.js)** – Real-time web interface to input text and play audio
+* 📦 **Docker/Docker Compose** – Easy local deployment
+
 <div align="center">
   <a href="https://www.youtube.com/watch?v=uFUVJh0nECE" target="_blank">
     <img src="./public/demo.gif" 
@@ -11,12 +17,6 @@ An end-to-end **Vietnamese Text-to-Speech system** with integrated **text correc
   </a>
   <p><b>Click to watch the full demo on YouTube</b></p>
 </div>
-
-This project provides:
-
-* ⚡ **Backend API (FastAPI)** – Text correction & TTS endpoints
-* 🎨 **Frontend (Next.js)** – Real-time web interface to input text and play audio
-* 📦 **Docker/Docker Compose** – Easy local deployment
 
 ---
 
