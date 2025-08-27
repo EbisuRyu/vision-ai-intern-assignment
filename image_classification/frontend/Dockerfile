@@ -1,23 +1,30 @@
-# Development Dockerfile for Next.js
+# Production Dockerfile for Next.js static export
 FROM node:18-alpine
 
 WORKDIR /app
 
-# Dev environment and better file-watching in containers (Windows/macOS)
-ENV NODE_ENV=development \
+# Set environment variables, nếu không truyền PORT thì dùng 3000
+ENV NODE_ENV=production \
     NEXT_TELEMETRY_DISABLED=1 \
-    CHOKIDAR_USEPOLLING=1 \
-    WATCHPACK_POLLING=true \
-    PORT=3000
+    PORT=${PORT:-3000}
 
-# Only install dependencies; source code will be mounted via volume in docker-compose
+# Copy package files
 COPY package.json package-lock.json* ./
-RUN npm ci
 
-# Copy entire source code into the image for self-contained dev runs
+# Install dependencies
+RUN npm ci --omit=dev
+
+# Copy source code
 COPY . .
 
-EXPOSE 3000
+# Build & export static site
+RUN npm run build
 
-# Start Next.js in dev mode, bind to all interfaces
-CMD ["npm", "run", "dev", "--", "-p", "3000", "-H", "0.0.0.0"]
+# Expose port
+EXPOSE ${PORT}
+
+# Install simple static server
+RUN npm install -g serve
+
+# Start server
+CMD ["sh", "-c", "serve -s out -l ${PORT}"]
