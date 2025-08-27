@@ -13,6 +13,8 @@ from src.model import ImageClassifier
 
 
 def setup_logger(log_file: str = "training.log"):
+    os.makedirs(os.path.dirname(log_file), exist_ok=True)
+    
     logger = logging.getLogger("logger")
     logger.setLevel(logging.INFO)
 
