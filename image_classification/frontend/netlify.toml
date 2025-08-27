@@ -7,3 +7,7 @@
   to = ":env(BACKEND_URL)/:splat"
   status = 200
   force = true
+
+[build.environment]
+  NEXT_PUBLIC_API_URL = "https://vision-ai-intern-assignment.onrender.com"
+  BACKEND_URL = "https://vision-ai-intern-assignment.onrender.com"
